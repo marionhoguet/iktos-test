@@ -7,13 +7,9 @@ import random
 
 app = flask.Flask(__name__)
 
-#dataset_url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data'
-
-#wget.download(dataset_url, 'dataset.csv')
 
 dataset = pd.read_csv('dataset.csv', header=None)
 
-#print(dataset.head())
 
 def checkIndexesAndType(number, axis):
     try:
